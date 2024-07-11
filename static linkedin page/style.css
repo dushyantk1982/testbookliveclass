@@ -1,0 +1,831 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;   
+}
+
+body{
+    background-color: #f4f2ee;
+    font-family: sans-serif;
+}
+
+/* --------------------------------------- Header/Nav Bar ----------------------------------------------- */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 60px;
+    box-shadow: 2px 2px 5px #f4f2ee;;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav > .left-container{
+    padding-left: 50px;
+    display: flex; 
+    flex-direction: row;           
+}
+
+nav > .left-container > img{
+    border-radius: 3px;
+}
+
+nav > .left-container > .searchbar{
+    height: 35px;
+    width: 300px;
+    background-color: #edf3f8;
+    border: none;
+    padding-top: 0px;
+    padding-left: 38px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+nav > .left-container i{
+    margin-left: 50px;
+    position: absolute;
+}
+
+nav > .left-container > .icon {
+    padding: 10px;
+    min-width: 40px;
+}
+
+nav > .right-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > .right-container > .menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+
+
+nav > .right-container > .menu > .menuicon{
+    height: 20px;
+    width: 20px;
+    color: #6c7479;
+}
+
+nav > .right-container > .menu > .menuicon:hover{
+    color: #191919;
+    cursor: pointer;  
+}
+
+nav > .right-container > .menu > a{
+    text-decoration: none;
+    color: #6c7479;
+    font-size: 12px;
+}
+
+nav > .right-container > .menu > a:hover{
+    color: #191919;
+    cursor: pointer;  
+}
+
+.vl{
+    border-left: 2px solid #f4f2ee;
+    height: 60px;
+    margin-right: 5px;
+}
+
+nav > .right-container > .menu > .user{
+    display: flex;
+    flex-direction: row;
+}
+
+nav > .right-container > .menu > .user > a{
+    margin-right: 3px;
+    text-decoration: none; 
+    color: #6c7479;
+    font-size: 12px;
+}
+
+nav > .right-container > .menu > .user > a:hover{
+    color: #191919;
+    cursor: pointer;  
+}
+
+nav > .right-container > .menu > .business > a{
+    margin-right: 3px;
+    text-decoration: none; 
+    color: #6c7479;
+    font-size: 12px;
+}
+
+nav > .right-container > .menu > .business > a:hover{
+    color: #191919;
+    cursor: pointer;  
+}
+
+nav > .right-container > .menu > .user > .downarrow{
+    color: #6c7479;
+}
+
+nav > .right-container > .menu > .business > .downarrow{
+    color: #6c7479;
+}
+
+/* --------------------------------------- Container/Layout ----------------------------------------------- */
+
+.container{
+   background-color: #f4f2ee;
+   justify-content: center;
+   align-items: center;
+   margin-left: 70px;
+   margin-right: 70px;
+   margin-top: 80px;
+}
+
+.container > .container1{
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+.container > .container1 > div{
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.container > .container1 > .personalinfo{
+    height: 380px;
+    width: 250px;
+    
+}
+
+.container > .container1 > .recent{
+    height: 380px;
+    width: 250px;
+    margin-top: 10px;
+    
+}
+
+.container > .container2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    float: left;
+}
+
+.container > .container2 > div{
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.container > .container2 > .newpost{
+    height: 120px;
+    width: 550px;
+    
+}
+.container > .container2 > .sharedpost1{
+    height: 550px;
+    width: 550px;
+    margin-top: 10px;
+    
+}
+.container > .container2 > .sharedpost2{
+    height: 700px;
+    width: 550px;
+    margin-top: 10px;
+    
+}
+.container > .container2 > .sharedpost3{
+    height: 20px;
+    width: 550px;
+    margin-top: 10px;
+   background-color: #f4f2ee; 
+}
+
+.container > .container3{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.container > .container3 > div{
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.container > .container3 > .news{
+    height: 380px;
+    width: 280px;
+}
+.container > .container3 > .viewedcourses{
+    height: 150px;
+    width: 280px;
+    margin-top: 10px;
+    
+}
+.container > .container3 > .feeds{
+    height: 310px;
+    width: 280px;
+    margin-top: 10px;
+    
+}
+
+/* --------------------------------------- Personal Information ----------------------------------------- */
+
+.container > .container1 > .personalinfo > .mypic{
+    position: relative;
+}
+
+.container > .container1 > .personalinfo > .mypic > .img2{
+    position: absolute;
+    top: 20px;
+    left: 95px;
+    z-index: 1;
+}
+
+.container > .container1 > .personalinfo > .myname{
+    margin-top: 40px;
+    text-align: center;
+}
+.container > .container1 > .personalinfo > .myname > .username{
+    font-size: 15px;
+    font-weight:600;
+    color: #191919;
+}
+.container > .container1 > .personalinfo > .myname > .designation{
+    font-size: 12px;
+    color: #6c7479;
+}
+.container > .container1 > .personalinfo > .hline{
+    border-bottom: 1.5px solid #f4f2ee;
+    margin-top: 20px;
+
+}
+.container > .container1 > .personalinfo > .viewers > .profileviewer{
+    font-size: 12px;
+    color: #6c7479;
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.container > .container1 > .personalinfo > .viewers > .profileviewer22{
+    font-size: 12px;
+    color: #055283;
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.container > .container1 > .personalinfo > .viewers > .analytics{
+    font-size: 12px;
+    color: #6c7479;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.container > .container1 > .personalinfo > .viewers:hover{
+    background-color: #eaeff2;
+    cursor: pointer;  
+}
+.container > .container1 > .personalinfo > .hline1{
+    border-bottom: 1.5px solid #f4f2ee;
+    margin-top: 90px;
+
+}
+.container > .container1 > .personalinfo > .access{
+    margin-top: 30px;
+    font-size: 12px;
+    color: #6c7479;
+    margin-left: 10px;
+}
+.container > .container1 > .personalinfo > .access:hover{
+    background-color: #eaeff2;
+    cursor: pointer;  
+}
+.container > .container1 > .personalinfo > .hline2{
+    border-bottom: 1.5px solid #f4f2ee;
+    margin-top: 20px;
+
+}
+.container > .container1 > .personalinfo > .bookmark{
+    margin-left: 10px;
+    margin-top: 15px;
+    color: #6c7479;
+}
+.container > .container1 > .personalinfo > .bookmark > a{
+    margin-left: 10px;
+    /* margin-top: 15px; */
+    color: #6c7479;
+    font-size: 12px;
+    text-decoration: none;
+}
+.container > .container1 > .personalinfo > .bookmark:hover{
+    background-color: #eaeff2;
+    cursor: pointer;  
+}
+/* ------------------------------------------------- Recent --------------------------------------------- */
+
+.container > .container1 > .recent > .heading{
+    margin-left: 10px;
+    margin-top: 15px;
+    color: #6c7479;
+    font-size: 12px;
+}
+.container > .container1 > .recent > .heading > .headcontent{
+    /* margin-left: 10px; */
+    margin-top: 10px;
+    color: #6c7479;
+    font-size: 12px;
+}
+.container > .container1 > .recent > .heading > .headcontent:hover{
+    background-color: #eaeff2;
+    cursor: pointer;  
+}
+.container > .container1 > .recent > .groups{
+    margin-left: 10px;
+    margin-top: 15px;
+    color: #169bed;
+    font-size: 12px;
+}
+.container > .container1 > .recent > .groups > .groupcontent{
+    /* margin-left: 10px; */
+    margin-top: 10px;
+    color: #6c7479;
+    font-size: 12px;
+}
+.container > .container1 > .recent > .groups > .groupcontent:hover{
+    background-color: #eaeff2;
+    cursor: pointer;  
+}
+.container > .container1 > .recent > .followedhashtag{
+    margin-left: 10px;
+    margin-top: 15px;
+    color: #169bed;
+    font-size: 12px;
+}
+.container > .container1 > .recent > .followedhashtag > .followedhashtagcontent{
+    /* margin-left: 10px; */
+    margin-top: 10px;
+    color: #6c7479;
+    font-size: 12px;
+}
+.container > .container1 > .recent > .followedhashtag > .followedhashtagcontent:hover{
+    background-color: #eaeff2;
+    cursor: pointer;  
+}
+
+/* ----------------------------------------------- New Post --------------------------------------------- */
+
+.container > .container2 > .newpost > .mypost{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.container > .container2 > .newpost > .mypost > img{
+    /* margin-left: 30px;  */
+    margin-top: 10px;
+    /* color: #6c7479; */
+    /* font-size: 12px; */
+    height: 60px;
+    width: 60px;
+}
+.container > .container2 > .newpost > .mypost > input{
+    margin-left: 20px; 
+    margin-top: 10px;
+    /* color: #6c7479; */
+    /* font-size: 12px; */
+    height: 50px;
+    width: 420px;
+    border-radius: 30px;
+    padding-left: 30px;
+}
+.container > .container2 > .newpost > .mypost1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    
+    margin-top: 10px;
+}
+.container > .container2 > .newpost > .mypost1 > .pics:hover{
+    background-color: #eaeff2;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;  
+}
+.container > .container2 > .newpost > .mypost1 > .pics > .photoicon1{
+    height: 20px;
+    width: 30px;
+    margin-left: 40px;
+    color: #169bed;
+    padding: 10px;
+    text-align: center;
+}
+.container > .container2 > .newpost > .mypost1 > .pics > .photoicontext1{
+    
+    font-size: 14px;
+    color:#6c7479;
+    padding: 10px;
+    text-align: center;
+}
+.container > .container2 > .newpost > .mypost1 > .pics > .photoicon2{
+    height: 20px;
+    width: 30px;
+    margin-left: 40px;
+    color: #c37d16;
+    padding: 10px;
+    text-align: center;
+}
+.container > .container2 > .newpost > .mypost1 > .pics > .photoicon3{
+    height: 20px;
+    width: 30px;
+    margin-left: 40px;
+    color: #e06847;
+    padding: 10px;
+    text-align: center;
+}
+
+/* ----------------------------------------------- Shared Post --------------------------------------------- */
+
+.container > .container2 > .sharedpost1 > .sharedcontent1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   width: 550px;
+   
+}
+.container > .container2 > .sharedpost1 > .sharedcontent1 > .sharedcontent1left{
+    float: left;
+    cursor: pointer;
+}
+
+.container > .container2 > .sharedpost1 > .sharedcontent1 > .sharedcontent1right{
+    margin-left: 380px;
+    cursor: pointer;
+}
+.container > .container2 > .sharedpost1 > .sharedcontent2{
+    margin-left: 20px;
+    width: 500px;
+    font-size: 14px;
+    color: #1f1f1f;
+    text-align: justify;
+}
+.container > .container2 > .sharedpost1 > .sharedcontent2 > span{
+    font-size: 12px;
+    color: #6c7479;
+}
+.container > .container2 > .sharedpost1 > .sharedcontent2 > span:hover{
+    cursor: pointer;
+}
+.container > .container2 > .sharedpost1 > .sharedcontent3{
+    margin-top: 10px;
+}
+.container > .container2 > .sharedpost1 > .sharedcontent4{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1f1f1f;
+}
+.container > .container2 > .sharedpost1 > .sharedcontent5{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 12px;
+    color: #6c7479;
+}
+.container > .container2 > .sharedpost1 > .sharedcontent6{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 12px;
+    color: #6c7479;
+}
+.container > .container2 > .sharedpost1 > .sharedcontent7{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 500px;
+    text-align: center;
+    border-top: 1.5px solid #f4f2ee;
+    
+}
+
+.container > .container2 > .sharedpost1 > .sharedcontent7 > i{
+    color: #5a5a5a;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+.container > .container2 > .sharedpost1 > .sharedcontent7 > span{
+    counter-reset: #5a5a5a;
+}
+.container > .container2 > .sharedpost1 > .sharedcontent7 > span:hover{
+    background-color: #eaeff2;
+    border-radius: 10px;
+    padding: 10px;  
+    cursor: pointer;  
+}
+/*------------------------------------------------- Shared Post 2 ----------------------------------------------*/
+
+.container > .container2 > .sharedpost2 > .sharedcontentA1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 550px;
+}
+.container > .container2 > .sharedpost2 > .sharedcontentA1 > .sharedcontent1left{
+    float: left;
+    cursor: pointer;
+}
+.container > .container2 > .sharedpost2 > .sharedcontentA1 > .sharedcontent1right{
+    margin-left: 250px;
+    cursor: pointer;
+}
+.container > .container2 > .sharedpost2 > .sharedcontenA2{
+    margin-left: 20px;
+    width: 500px;
+    font-size: 14px;
+    color: #1f1f1f;
+    text-align: justify;
+}
+.container > .container2 > .sharedpost2 > .sharedcontenA2 > span{
+    font-size: 12px;
+    color: #6c7479;
+}
+
+
+.container > .container2 > .sharedpost2 > .sharedcontenA3{
+    margin-top: 10px;
+}
+.container > .container2 > .sharedpost2 > .sharedcontenA4{
+   
+    color: #1f1f1f;
+    background-color: #e6f1f7;
+    height: 40px;
+    width: 550px;
+}
+.container > .container2 > .sharedpost2 > .sharedcontenA4 > .sharedcontenA4-left{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #1f1f1f;
+}
+.container > .container2 > .sharedpost2 > .sharedcontenA4 > .sharedcontenA4-right{
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color:#169bed;
+    border: 2px solid #169bed;
+    border-radius: 30px;
+    padding: 2px;
+    margin-left: 30px;
+}
+.container > .container2 > .sharedpost2 > .sharedcontenA4 > .sharedcontenA4-left2{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 10px;
+    color:#6c7479;
+}
+
+.container > .container2 > .sharedpost2 > .sharedcontenA5{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 500px;
+    text-align: center;
+    border-top: 1.5px solid #f4f2ee;
+   
+}
+.container > .container2 > .sharedpost2 > .sharedcontenA5 > i{
+    color: #5a5a5a;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+.container > .container2 > .sharedpost2 > .sharedcontenA5 > span{
+    counter-reset: #5a5a5a;
+}
+.container > .container2 > .sharedpost2 > .sharedcontenA5 > span:hover{
+    background-color: #eaeff2;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;   
+}
+
+/* ------------------------------------------------- Container 3/News --------------------------------------------- */
+
+.container > .container3 > .news > .linknews{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container > .container3 > .news > .linknews > .news-left{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #1f1f1f;
+    font-size: 16px;
+    float: left;
+}
+
+.container > .container3 > .news > .linknews > .news-right > img{
+    margin-top: 5px;
+    margin-left: 145px;
+    height: 15px;
+    width: 15px;
+    float: right;
+}
+
+.container > .container3 > .news > .topstory{
+    margin-left: 10px;
+    margin-top: 15px;
+    color: #6c7479;
+    font-size: 14px;
+    font-weight: bold;
+}
+.container > .container3 > .news > .story1{
+    margin-top: 10px;
+}
+.container > .container3 > .news > .story1 > .top{
+    margin-left: 10px;
+    margin-top: 15px;
+    color:#1f1f1f;
+    font-size: 14px;
+}
+.container > .container3 > .news > .story1 > .down{
+    margin-left: 10px;
+    margin-top: 5px;
+    color:#6c7479;
+    font-size: 11px;
+}
+.container > .container3 > .news > .story1:hover{
+    background-color: #eaeff2;
+    cursor: pointer;  
+}
+.container > .container3 > .news > .seemore{
+    background-color:#fff;
+    margin-top: 30px;
+    /* margin-left: 10px; */
+    /* padding: 10px; */
+}
+.container > .container3 > .news > .seemore >span{
+    background-color:#fff;
+    font-size: 14px;
+    color: #1f1f1f;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: 10px;
+}
+.container > .container3 > .news > .seemore > span:hover{
+    background-color:#eaeff2;
+    border-radius: 10px;
+    cursor: pointer;  
+}
+
+.container > .container3 > .viewedcourses > .courses{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container > .container3 > .viewedcourses > .courses > .course-left{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #1f1f1f;
+    font-size: 16px;
+    /* float: left; */
+}
+
+.container > .container3 > .viewedcourses > .courses > .course-right > img{
+    margin-top: 5px;
+    margin-left: 40px;
+    height: 15px;
+    width: 15px;
+    float: right;
+}
+
+.container > .container3 > .viewedcourses > .coursenames{
+    /* margin-left: 10px; */
+    margin-top: 15px;
+    color: #6c7479;
+    font-size: 14px;
+    /* font-weight: bold; */
+   
+}
+/* .container > .container3 > .viewedcourses > .coursenames{
+    margin-top: 10px;
+} */
+.container > .container3 > .viewedcourses > .coursenames > .coursename{
+    margin-left: 10px;
+    margin-top: 15px;
+    color:#1f1f1f;
+    font-size: 14px;
+}
+.container > .container3 > .viewedcourses > .coursenames > .views{
+    margin-left: 10px;
+    margin-top: 5px;
+    color:#6c7479;
+    font-size: 10px;
+}
+.container > .container3 > .viewedcourses > .coursenames:hover{
+    background-color: #eaeff2;
+    cursor: pointer;  
+}
+
+.container > .container3 > .feeds > .feedhead{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container > .container3 > .feeds > .feedhead > .feed-left{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #1f1f1f;
+    font-size: 16px;
+    /* float: left; */
+}
+
+.container > .container3 > .feeds > .feedhead > .feed-right > img{
+    margin-top: 5px;
+    margin-left: 130px;
+    height: 15px;
+    width: 15px;
+    float: right;
+}
+
+.container > .container3 > .feeds > .yourfeed{
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    /* justify-content:space-between; */
+
+}
+
+.container > .container3 > .feeds > .yourfeed > .logo{
+    width: 50px;
+}
+.container > .container3 > .feeds > .yourfeed > .logo > img{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+.container > .container3 > .feeds > .yourfeed > .company{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* width: 200px; */
+    text-align: left;
+    float: left;
+    margin-left: 20px;
+    
+}
+.container > .container3 > .feeds > .yourfeed > .company > .name{
+    font-size: 14px;
+    color: #1f1f1f;
+    text-align: left;
+    
+}
+.container > .container3 > .feeds > .yourfeed > .company > .detail{
+    font-size: 12px;
+    color:#6c7479;
+    text-align: left;
+    
+}
+.container > .container3 > .feeds > .yourfeed > .company > .follow{
+    margin-top: 5px;
+    font-size: 12px;
+    color:#1f1f1f;
+    background-color: #fff;
+    text-align: center;
+    border: 2px solid #1f1f1f;
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;            
+}
+.container > .container3 > .feeds > .yourfeed > .company > .follow:hover{
+    background-color: #eaeff2;
+    cursor: pointer;  
+}
+.container > .container3 > .feeds > .hl{
+    border: 1px solid #f4f2ee;
+}
